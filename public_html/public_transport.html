@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>dpitulia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles_vasttrafik.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/fifteen" type="text/css" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+	<div id="topBanner" class="bg-dark text-white text-center ">
+		<h1>Projekt</h1>
+		<p>Tidtabeller Kollektivtrafik</p>
+	</div>
+
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="index.html">Home</a>
+						</li>
+						
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Projekt
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li><a class="dropdown-item" href="public_transport.html">Tidtabeller Kollektivtrafik</a></li>
+								<li><a class="dropdown-item" href="chat.html">Chattrum</a></li>
+								<li><a class="dropdown-item" href="3d_print.html">3D-print av skärm-chassi</a></li>
+								<li><a class="dropdown-item" href="circle_animation.html">Interaktiv enhetscirkel</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="container mt-5">
+
+		<h2 class ="public-transport">Tidtabeller kollektivtrafik</h2>
+		<p class="public-transport">Trött på Västtrafik ToGo? Använd denna sida istället 😉</p> 
+
+		<div class="public-transport container-fluid mt-3 bg-dark">
+			<h3 class="display-4" style="color: #0080FF;"> Tidtabell kollektivtrafik</h3>
+			<div class="row">
+				<div class="col-sm-6" style="color: #D3D3D3;">Sök hållplats:
+					<input type="text" id="myText" size="20" class="bg-dark" style="color: #D3D3D3;">
+
+				</div>
+				<div class="col-sm-2">
+					<button id="myBtn" class="btn btn-primary" onClick="window.location.reload();">Sök</button>
+				</div>
+				<div id="stopText" class="col-sm-4" style="color: #D3D3D3;">
+					Hållplats:
+				</div>
+			</div>
+
+			<table class="table table-dark">
+				<tr>
+					<th style="color: #0080FF;">Linje</th>
+					<th style="color: #0080FF;">Tid (min)</th>
+					<th style="color: #0080FF;">Riktning</th>
+				</tr>
+				<tr>
+					<td id="11"><p></p></td>
+					<td id="12"></td>
+					<td id="13"></td>
+				</tr>
+				<tr>
+					<td id="21"><p></p></td>
+					<td id="22"></td>
+					<td id="23"></td>
+				</tr>
+				<tr>
+					<td id="31"><p></p></td>
+					<td id="32"></td>
+					<td id="33"></td>
+				</tr>
+				<tr>
+					<td id="41"><p></p></td>
+					<td id="42"></td>
+					<td id="43"></td>
+				</tr>
+				<tr>
+					<td id="51"><p></p></td>
+					<td id="52"></td>
+					<td id="53"></td>
+				</tr>
+				<tr>
+					<td id="61"><p></p></td>
+					<td id="62"></td>
+					<td id="63"></td>
+				</tr>
+				<tr>
+					<td id="71"><p></p></td>
+					<td id="72"></td>
+					<td id="73"></td>
+				</tr>
+
+			</table>
+		</div>
+
+	</div>
+	<div></div>
+	<footer class="mt-auto">
+		<div class="mt-5 p-4 bg-dark text-white text-center">
+			<p id="dates"></p>
+		</div>
+	</footer>
+
+</body>
+<script src="js/script_date.js"></script>
+<script src="js/script_vasttrafik.js"></script>
+
+</html>

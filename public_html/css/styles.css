@@ -1,0 +1,79 @@
+ /* Style all font awesome icons */
+body {
+  font-family: 'Calibri';
+}
+
+li {
+  max-width: 500px;
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+#topBanner{
+  background-image: url("../img/home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height:100%;
+  padding: 5rem !important;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#footer {
+  border-top-width: 12rem;
+  border-top-style: solid;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+#sendButton {
+  padding-left: 0px;
+}
+
+a.fa-envelope:hover {
+  color: #000000;
+}
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Email */
+.fa-envelope {
+  color: white;
+  background: #808080;
+} 
+
+/*Canvas plane styling*/
+
+#myCanvasPlane{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}

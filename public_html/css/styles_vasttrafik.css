@@ -1,0 +1,25 @@
+td {
+  text-align: left;
+  color: #D3D3D3;
+}
+
+tr td:nth-child(2){
+  text-align: center;
+}
+
+tr th {
+  text-align: left;
+}
+
+tr th:nth-child(2) {
+  text-align: center;
+}
+
+#stopText, #myText {
+  margin-top: 4px;
+}
+
+.public-transport {
+  font-family: "Calibri" !important;
+  border-radius: 5px;
+}
