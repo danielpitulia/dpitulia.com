@@ -36,13 +36,13 @@
 						
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Projekt
+								Små Projekt
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="public_transport.html">Tidtabeller Kollektivtrafik</a></li>
+								<li><a class="dropdown-item active" href="public_transport.html">Tidtabeller Kollektivtrafik</a></li>
 								<li><a class="dropdown-item" href="chat.html">Chattrum</a></li>
 								<li><a class="dropdown-item" href="3d_print.html">3D-print av skärm-chassi</a></li>
-								<li><a class="dropdown-item" href="circle_animation.html">Interaktiv enhetscirkel</a></li>
+								<li><a class="dropdown-item" href="circle_animation.html">Enhetscirkel</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -57,67 +57,54 @@
 		<p class="public-transport">Trött på Västtrafik ToGo? Använd denna sida istället 😉</p> 
 
 		<div class="public-transport container-fluid mt-3 bg-dark">
-			<h3 class="display-4" style="color: #0080FF;"> Tidtabell kollektivtrafik</h3>
+			<h3 class="display-4 textDepartureBlue"> Tidtabell kollektivtrafik</h3>
 			<div class="row">
-				<div class="col-sm-6" style="color: #D3D3D3;">Sök hållplats:
-					<input type="text" id="myText" size="20" class="bg-dark" style="color: #D3D3D3;">
+				<div class="col-sm-6 textDepartureWhite">Sök hållplats:
+					<input type="text" id="myText" size="20" class="bg-dark textDepartureWhite" value = "Göteborgs centralstation	">
 
 				</div>
 				<div class="col-sm-2">
-					<button id="myBtn" class="btn btn-primary" onClick="window.location.reload();">Sök</button>
+					<button id="myBtn" class="btn btn-primary">Sök</button>
 				</div>
-				<div id="stopText" class="col-sm-4" style="color: #D3D3D3;">
+				<div id ="stopText" class="col-sm-2 textDepartureWhite stopText">
 					Hållplats:
+				</div>
+				<div class="col-sm-2 stopText">
+					<li class="nav-item dropdown">
+						<a id="activeDeparture" class="dropdown-toggle text-white textDepartureWhite" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Antal avgångar: 10
+						</a>
+						<ul id="selectDep" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li class="selectDepartureAmount">1</li>
+							<li class="selectDepartureAmount">2</li>
+							<li class="selectDepartureAmount">3</li>
+							<li class="selectDepartureAmount">4</li>
+							<li class="selectDepartureAmount">5</li>
+							<li class="selectDepartureAmount">6</li>
+							<li class="selectDepartureAmount">7</li>
+							<li class="selectDepartureAmount">8</li>
+							<li class="selectDepartureAmount">9</li>
+							<li class="selectDepartureAmount">10</li>
+						</ul>
+					</li>
 				</div>
 			</div>
 
-			<table class="table table-dark">
-				<tr>
-					<th style="color: #0080FF;">Linje</th>
-					<th style="color: #0080FF;">Tid (min)</th>
-					<th style="color: #0080FF;">Riktning</th>
-				</tr>
-				<tr>
-					<td id="11"><p></p></td>
-					<td id="12"></td>
-					<td id="13"></td>
-				</tr>
-				<tr>
-					<td id="21"><p></p></td>
-					<td id="22"></td>
-					<td id="23"></td>
-				</tr>
-				<tr>
-					<td id="31"><p></p></td>
-					<td id="32"></td>
-					<td id="33"></td>
-				</tr>
-				<tr>
-					<td id="41"><p></p></td>
-					<td id="42"></td>
-					<td id="43"></td>
-				</tr>
-				<tr>
-					<td id="51"><p></p></td>
-					<td id="52"></td>
-					<td id="53"></td>
-				</tr>
-				<tr>
-					<td id="61"><p></p></td>
-					<td id="62"></td>
-					<td id="63"></td>
-				</tr>
-				<tr>
-					<td id="71"><p></p></td>
-					<td id="72"></td>
-					<td id="73"></td>
-				</tr>
-
-			</table>
+			<div>
+				<table class="table table-dark">
+					<tbody id = "tableDepartures" >
+					<tr>
+					  <th style="color: #0080FF;">Linje</th>
+					  <th style="color: #0080FF;">Tid (min)</th>
+					  <th style="color: #0080FF;">Riktning</th>
+					</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 
 	</div>
-	<div></div>
+	
 	<footer class="mt-auto">
 		<div class="mt-5 p-4 bg-dark text-white text-center">
 			<p id="dates"></p>

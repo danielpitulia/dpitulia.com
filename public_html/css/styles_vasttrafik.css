@@ -15,11 +15,32 @@ tr th:nth-child(2) {
   text-align: center;
 }
 
-#stopText, #myText {
+.stopText, #myText {
   margin-top: 4px;
 }
 
 .public-transport {
   font-family: "Calibri" !important;
   border-radius: 5px;
+}
+#changeDepartureTotal {
+  overflow-y:scroll; 
+  height:25px;
+}
+
+#changeDepartureTotal button{
+  height:25px;
+  width:25px;
+}
+
+#activeDeparture{
+  text-decoration: none;
+}
+
+.textDepartureWhite{
+  color: #D3D3D3 !important;
+}
+
+.textDepartureBlue{
+  color: #0080FF !important;
 }
