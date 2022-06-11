@@ -1,0 +1,98 @@
+#circle_container {
+	max-width: 350px;
+	position: relative;
+	padding:0px;
+	
+}
+
+#intro_circle {
+	max-width: 350px;
+}
+
+#myCanvas {
+	border: solid 1px;
+	position: relative;
+	z-index: 2;
+	touch-action: none;
+	display: block;
+	margin: 0 auto;
+}
+
+.cmath {
+	font-size: 50%;
+	position: absolute;
+	z-index: 1;
+}
+
+@media only screen and (min-width: 768px) {
+	.cmath{font-size:60%;}
+}
+
+/*Absolute position of exact angle values. Simple solution*/
+/*#x_y_11 {
+	top: 160px;
+	left: 265px;
+}
+
+#x_y_12 {
+	top: 120px;
+	left: 240px;
+}
+
+
+#x_y_13 {
+	top: 80px;
+	left: 210px;
+}
+
+#x_y_21 {
+	top: 80px;
+	right: 210px;
+}
+
+#x_y_22 {
+	top: 120px;
+	right: 240px;
+}
+
+#x_y_23 {
+	top: 160px;
+	right: 265px;
+}
+
+
+#x_y_31 {
+	top: 290px;
+	right: 210px;
+}
+
+#x_y_32 {
+	top: 250px;
+	right: 240px;
+}
+
+
+#x_y_33 {
+	top: 210px;
+	right: 265px;
+}
+
+#x_y_41 {
+	top: 290px;
+	left: 210px;
+}
+
+#x_y_42 {
+	top: 250px;
+	left: 240px;
+}
+
+
+#x_y_43 {
+	top: 210px;
+	left: 265px;
+}*/
+
+div.cmath {
+	white-space: pre;
+}
