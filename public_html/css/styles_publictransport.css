@@ -20,11 +20,10 @@ tr th {
 }
 
 .public-transport {
-  font-family: "Calibri" !important;
   border-radius: 5px;
 }
 #changeDepartureTotal {
-  overflow-y:scroll; 
+  overflow-y:scroll;
   height:25px;
 }
 

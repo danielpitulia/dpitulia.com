@@ -1,6 +1,12 @@
  /* Style all font awesome icons */
+ @font-face {
+   font-family: 'Lato';
+   src: URL('./../fonts/Lato-Regular.ttf');
+ }
+
+
 body {
-  font-family: 'Calibri';
+  font-family: 'Lato';
 }
 
 li {
@@ -70,5 +76,4 @@ ul {
 .fa-envelope, .fa-envelope:hover {
   color: white;
   background: #808080;
-} 
-
+}
